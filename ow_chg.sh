@@ -73,7 +73,7 @@ else
             exit 1
         fi
     else 
-        echo "You need to be root./"
+        echo "You need to be root."
         exit 1
     fi
 fi
