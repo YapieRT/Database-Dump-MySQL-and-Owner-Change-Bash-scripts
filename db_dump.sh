@@ -25,7 +25,7 @@ else
 	echo "MySql service - running"
 fi
 
-dump=`mysqldump -u $USER_DUMP -p$PASSWORD_DUMP moodle > $ABSOLUTE_PATH$backup_name` # Creating backup in dir where script is located
+dump=`mysqldump --single-transaction -u $USER_DUMP -p$PASSWORD_DUMP moodle > $ABSOLUTE_PATH$backup_name` # Creating backup in dir where script is located
 
 #CRONTAB
 #*/1 * * * * {path}/db_dump.sh # dump every minute for test # use pwd in script location
